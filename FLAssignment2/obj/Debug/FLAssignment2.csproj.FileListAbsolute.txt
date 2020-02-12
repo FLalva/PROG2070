@@ -1,0 +1,7 @@
+C:\Users\dancing\Documents\My Shit\School\CPA\Year2\Semester2\PROG2070_SoftwareQuality\Assignments\Assignment2\FLAssignment2\FLAssignment2\bin\Debug\FLAssignment2.exe.config
+C:\Users\dancing\Documents\My Shit\School\CPA\Year2\Semester2\PROG2070_SoftwareQuality\Assignments\Assignment2\FLAssignment2\FLAssignment2\bin\Debug\FLAssignment2.exe
+C:\Users\dancing\Documents\My Shit\School\CPA\Year2\Semester2\PROG2070_SoftwareQuality\Assignments\Assignment2\FLAssignment2\FLAssignment2\bin\Debug\FLAssignment2.pdb
+C:\Users\dancing\Documents\My Shit\School\CPA\Year2\Semester2\PROG2070_SoftwareQuality\Assignments\Assignment2\FLAssignment2\FLAssignment2\obj\Debug\FLAssignment2.csprojAssemblyReference.cache
+C:\Users\dancing\Documents\My Shit\School\CPA\Year2\Semester2\PROG2070_SoftwareQuality\Assignments\Assignment2\FLAssignment2\FLAssignment2\obj\Debug\FLAssignment2.csproj.CoreCompileInputs.cache
+C:\Users\dancing\Documents\My Shit\School\CPA\Year2\Semester2\PROG2070_SoftwareQuality\Assignments\Assignment2\FLAssignment2\FLAssignment2\obj\Debug\FLAssignment2.exe
+C:\Users\dancing\Documents\My Shit\School\CPA\Year2\Semester2\PROG2070_SoftwareQuality\Assignments\Assignment2\FLAssignment2\FLAssignment2\obj\Debug\FLAssignment2.pdb
