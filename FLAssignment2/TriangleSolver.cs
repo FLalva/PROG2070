@@ -26,7 +26,11 @@ namespace FLAssignment2
         /// <returns></returns>
         public static string Analyze(int firstNumber, int secondNumber, int thirdNumber)
         {
-            if (firstNumber.Equals(secondNumber) && secondNumber.Equals(thirdNumber))
+            if(firstNumber < 1 || secondNumber < 1 || thirdNumber < 1)
+            {
+                return "values have to be greater than 0";
+            }
+            else if (firstNumber.Equals(secondNumber) && secondNumber.Equals(thirdNumber))
             {
                 return "equilateral";
             }
@@ -36,7 +40,14 @@ namespace FLAssignment2
             }
             else
             {
-                return "scalene";
+                if (Program.ValidatingTriangle(firstNumber, secondNumber, thirdNumber))
+                {
+                    return "scalene";
+                }
+                else
+                {
+                    return "not a triangle";
+                }
             }
         }
     }
