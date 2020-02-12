@@ -37,9 +37,7 @@ namespace FLAssignment2
             {
                 if (digit < 1)
                 {
-                    Console.WriteLine("Dimension must be greater than zero, enter another number");
-                    string otherInput = Console.ReadLine();
-                    return ValidatingDimensions(otherInput);
+                    Console.WriteLine("Dimension must be greater than zero");
                 }
                 else
                 {
@@ -48,9 +46,20 @@ namespace FLAssignment2
             }
             else
             {
-                Console.WriteLine("Dimension must be an integer, enter another number");
-                string otherInput = Console.ReadLine();
-                return ValidatingDimensions(otherInput);
+                Console.WriteLine("Dimension must be an integer");
+            }
+            return digit = 0;
+        }
+
+        public static bool ValidatingTriangle(int a, int b, int c)
+        {
+            if (a + b > c && a + c > b && b + c > a)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
             }
         }
 
@@ -62,10 +71,13 @@ namespace FLAssignment2
             string firstDimension;
             string secondDimension;
             string thirdDimension;
+            string triangleType;
 
             int firstNumber;
             int secondNumber;
             int thirdNumber;
+
+            bool isTriangle;
 
             do
             {
@@ -75,19 +87,47 @@ namespace FLAssignment2
                 switch (menuSelection)
                 {
                     case "1":
+                        //Validate first number
                         Console.WriteLine("Enter first dimension of triangle");
                         firstDimension = Console.ReadLine();
                         firstNumber = ValidatingDimensions(firstDimension);
+                        if (firstNumber == 0)
+                        {
+                            break;
+                        }
+
+                        //Validate second number
                         Console.WriteLine("Enter second dimension of triangle");
                         secondDimension = Console.ReadLine();
                         secondNumber = ValidatingDimensions(secondDimension);
+                        if (secondNumber == 0)
+                        {
+                            break;
+                        }
+
+                        //validate third number
                         Console.WriteLine("Enter third dimension of triangle");
                         thirdDimension = Console.ReadLine();
                         thirdNumber = ValidatingDimensions(thirdDimension);
+                        if (thirdNumber == 0)
+                        {
+                            break;
+                        }
 
-                        /////////////Debugging, delete later
-                        Console.WriteLine($"Your triangle dimensions are: {firstNumber}, {secondNumber}, {thirdNumber}");
-                        //check if triangle can form a trianlge, if so what kind of triangle
+                        //check if check if values can form a triangle
+                        isTriangle = ValidatingTriangle(firstNumber, secondNumber, thirdNumber);
+                        
+                        if (isTriangle)
+                        {
+                            //What kind of triangle
+                            triangleType = TriangleSolver.Analyze(firstNumber, secondNumber, thirdNumber);
+                            Console.WriteLine($"{firstNumber}, {secondNumber}, {thirdNumber} forms a(n) {triangleType} triangle");
+                        }
+                        else
+                        {
+                            Console.WriteLine($"{firstNumber}, {secondNumber}, {thirdNumber} do not form a triangle");
+                        }
+
                         break;
 
                     case "2":
